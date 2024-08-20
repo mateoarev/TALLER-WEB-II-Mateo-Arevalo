@@ -1,0 +1,12 @@
+#contenedor {
+    background-color: darkcyan;
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.parrafo {
+    color: #fff;
+    font-size: 16px;
+}
