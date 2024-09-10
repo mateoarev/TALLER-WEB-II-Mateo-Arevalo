@@ -34,15 +34,25 @@ var arregloNombres = ['Lourdes', 'Ximena', 'Raúl', 'Ana', 'Eliana', 'Paula'];
 var sinOrdenar = document.querySelector('#segundoParrafo');
 sinOrdenar.innerHTML = arregloNombres.join(', ');
 
-/*Utilizar un párrafo para imprimir los nombres ordenados en un tercer párrafo*/
-var ordenar = document.querySelector('#tercerParrafo');
-ordenar.innerHTML = arregloNombres.sort().join(', ');
+// /*Utilizar un párrafo para imprimir los nombres ordenados en un tercer párrafo*/
+// var ordenar = document.querySelector('#tercerParrafo');
+// ordenar.innerHTML = arregloNombres.sort().join(', ');
+
+function ordenarNombres() {
+    var botonOrdenar = document.getElementById('tercerParrafo');
+    botonOrdenar.innerHTML = arregloNombres.sort().join(', ');
+}
 
 /*Utilizar un párrafo para mostrar los precios sin aumento*/
 var arregloPrecios = [600, 400, 300, 200, 100];
 var sinAumento = document.querySelector('#quintoParrafo');
-sinAumento.innerHTML = arregloPrecios.join(' / ');
+sinAumento.innerHTML = arregloPrecios.join(' - ');
 
-/*Utilizar un párrafo para mostrar los precios con aumento*/
-var aumento = document.querySelector('#sextoParrafo');
-aumento.innerHTML = arregloPrecios.map(precio => (precio * 1.10).toFixed(2)).join(' / ');
+// /*Utilizar un párrafo para mostrar los precios con aumento*/
+// var aumento = document.querySelector('#sextoParrafo');
+// aumento.innerHTML = arregloPrecios.map(precio => (precio * 1.10).toFixed(2)).join(' / ');
+
+function aumentarPrecios() {
+    var botonAumentar = document.getElementById('sextoParrafo');
+    botonAumentar.innerHTML = arregloPrecios.map(precio => (precio * 1.10).toFixed(2)).join(' - ');
+}
